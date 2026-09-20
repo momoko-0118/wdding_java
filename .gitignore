@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Java / Eclipse
+*.class
+wedding_java/build/
+wedding_java/.settings/
+
+# Tomcat
+work/
+temp/
+logs/
+
+# Vue / Node
+wedding_vue/node_modules/
+wedding_vue/dist/
+
+# Environment / secrets
+.env
+.env.*
+
+# MySQL Connector
+mysql-connector-j-9.3.0/

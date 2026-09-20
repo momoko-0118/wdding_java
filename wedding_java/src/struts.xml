@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!-- Strutsの詳細設定 -->
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="com.diworksdev.WeddingInvitation.action" namespace="/api" extends="json-default">
+	
+		<action name="test" 
+		class="com.diworksdev.WeddingInvitation.action.TestAction"
+		method="sample">
+			<result name="success" type="json" />
+		</action>
+		
+		<action name="LoginAction" 
+		class="com.diworksdev.WeddingInvitation.action.LoginAction"
+		method="execute">
+			<result name="success" type="json" />
+			<result name="error" type="json" />
+		</action>
+		
+		<action name="UserRegistAction" 
+		class="com.diworksdev.WeddingInvitation.action.UserRegistAction"
+		method="execute">
+			<result name="success" type="json" />
+			<result name="error" type="json" />
+		</action>
+		
+		<action name="UserRegistConfirmAction" 
+		class="com.diworksdev.WeddingInvitation.action.UserRegistConfirmAction"
+		method="execute">
+			<result name="success" type="json" />
+			<result name="error" type="json" />
+		</action>
+		
+		<action name="UserRegistCompleteAction" 
+		class="com.diworksdev.WeddingInvitation.action.UserRegistCompleteAction"
+		method="execute">
+			<result name="success" type="json" />
+			<result name="error" type="json" />
+		</action>
+		
+		<action name="MyPageAction"
+	    class="com.diworksdev.WeddingInvitation.action.MyPageAction"
+	    method="execute">
+		    <result name="success" type="json" />
+		    <result name="error" type="json" />
+		</action>
+		
+		<action name="GuestRegistAction" 
+		class="com.diworksdev.WeddingInvitation.action.GuestRegistAction"
+		method="execute">
+			<result name="success" type="json" />
+			<result name="error" type="json" />
+		</action>
+		
+		<action name="GuestRegistConfirmAction" 
+		class="com.diworksdev.WeddingInvitation.action.GuestRegistConfirmAction"
+		method="execute">
+			<result name="success" type="json" />
+			<result name="error" type="json" />
+		</action>
+		
+		<action name="GuestRegistCompleteAction" 
+		class="com.diworksdev.WeddingInvitation.action.GuestRegistCompleteAction"
+		method="execute">
+			<result name="success" type="json" />
+			<result name="error" type="json" />
+		</action>
+		
+		<action name="URLConfigureAction"
+    	class="com.diworksdev.WeddingInvitation.action.URLConfigureAction"
+		method="execute">
+    <result name="success" type="json"/>
+    <result name="error" type="json"/>
+</action>
+	    </package>
+</struts>
